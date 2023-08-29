@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #d5e1ef;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 250px;
+    margin: 60px auto ;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img{
+    width:100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.card header{
+    font-weight: bolder;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.card article{
+    color: #9b9ba2;
+    font-size: 12px;
+}
