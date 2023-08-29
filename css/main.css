@@ -1,7 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     background-color: #d5e1ef;
@@ -12,8 +12,8 @@ body{
     flex-wrap: wrap;
     background-color: #ffffff;
     border-radius: 20px;
-    width: 250px;
-    margin: 60px auto ;
+    width: 300px;
+    margin: 150px auto 70px;
     padding: 20px;
     text-align: center;
 }
@@ -25,11 +25,12 @@ body{
 }
 .card header{
     font-weight: bolder;
-    font-size: 17px;
-    margin: 10px 0;
+    font-size: 20px;
+    margin: 20px 0;
 }
 
 .card article{
     color: #9b9ba2;
-    font-size: 12px;
+    font-size: 15px;
+    margin-bottom: 15px;
 }
