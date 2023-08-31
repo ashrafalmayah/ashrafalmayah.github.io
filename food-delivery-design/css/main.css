@@ -1,0 +1,91 @@
+:root{
+    --primary-color: #ffc529;
+    --secondary-color: white;
+    --dark-color: #272d2f;
+}
+*{
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    background: url("../images/food-background.jpg") no-repeat center /cover;
+}
+.form-container{
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    /* width:550px; */
+    width: min(70%, 550px);
+    margin: 40px auto 0;
+    color: white;
+    box-shadow: black 0px 1px 20px 0px;
+    overflow: hidden;
+}
+form{  
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.form-container header{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background-color: #272d2f;
+}
+.form-container h3{
+    text-align: center;
+}
+input,select{
+    margin: 5px 0;
+    transition: background-color .3s;
+}
+input:focus,select:focus{
+    outline: none;
+}
+input{
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+select{
+    position: relative;
+    border: none;
+    color: var(--dark-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+}
+input[type="submit"]{
+    font-weight: 700;
+    color: var(--dark-color);
+    width: 200px;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+    background-color: var(--secondary-color);
+    transition: background-color .3s;
+}
+.food-section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.food-section div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.takeaway label{
+    margin-right: 10px;
+}
+
+input:hover, select:hover {
+    background-color: #ececec;
+}
+input[type="submit"]:hover {
+    background-color: var(--dark-color);
+    color: white;
+}
