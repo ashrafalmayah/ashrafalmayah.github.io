@@ -111,10 +111,12 @@ Rating Badges
 }
 
 @media screen and (max-width: 768px) {
+    .rating-badges{
+        grid-row-start: 2;
+    }
     .rating-badge{
         flex-direction: column;
         align-self: center;
-        grid-row-start: 2;
         width: 100%;
     }
 }
