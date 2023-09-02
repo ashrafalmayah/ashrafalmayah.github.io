@@ -35,6 +35,16 @@
     width: 60vw;
 }
 
+@media screen and (max-width: 768px) {
+    .reviews-section{
+        grid-template-columns: 1fr;
+        padding: 30px;
+        width: 90vw;
+        text-align: center;
+        column-gap: 0px;
+    }
+}
+
 /* Reviews */
 
 /* 
@@ -55,6 +65,11 @@ Content
     color: #8a8088;
 }
 
+@media screen and (max-width: 768px) {
+    .reviews-content p{
+        font-size: 15px;
+    }
+}
 /* 
 Rating Badges
 */
@@ -75,7 +90,7 @@ Rating Badges
 }
 
 .rating-badge:nth-child(3) {
-  align-self: flex-end;
+    align-self: flex-end;
 }
 
 .rating-badge{
@@ -86,15 +101,22 @@ Rating Badges
     color: var(--primary-color);
     border-radius: 5px;
     padding: 13px 20px;
+    gap: 6px;
     justify-content: center;
     align-items: center;
-}
-.rating-stars{
-    margin-right: 12px;
 }
 
 .rating-stars img{
     width: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .rating-badge{
+        flex-direction: column;
+        align-self: center;
+        grid-row-start: 2;
+        width: 100%;
+    }
 }
 
 /* 
@@ -141,4 +163,16 @@ Reviews Cards
     font-weight: 300;
     font-size: 10px;
     line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .reviews-cards{
+        flex-wrap: wrap;
+    }
+    .review-card p{
+        text-align: left;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 1.6;
+    }  
 }
