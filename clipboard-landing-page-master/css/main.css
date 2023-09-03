@@ -1,0 +1,66 @@
+:root{
+    --primary-color: #26bba5;
+    --secondary-color: #6174ff;
+    --dark-font-color: #4e565b;
+    --light-font-color: #999da0;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+    padding: 25px;
+    background: url("../images/bg-header-desktop.png") no-repeat center / cover;
+}
+
+.hero img{
+    margin: 100px 0 20px;
+}
+
+.hero h1{
+    font-weight: 500;
+    font-size: 33px;
+    color: var(--dark-font-color);
+
+}
+
+.hero p{
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--light-font-color);
+}
+
+.button{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-bottom: #21a189 3px solid;
+    border-radius: 30px;
+    padding: 15px 80px;
+    font-size: 20px;
+    box-shadow: #c6c6c6 0px 5px 10px 0px;
+}
+
+.button-primary{
+    background-color: var(--primary-color);
+    border-bottom: #21a189 3px solid;
+}
+
+.button-secondary{
+    background-color: var(--secondary-color);
+    border-bottom: #5161da 3px solid;
+}
