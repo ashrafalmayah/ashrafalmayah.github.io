@@ -207,7 +207,7 @@ Providers
 @media screen and (min-width: 768px) {
     .providers{
         flex-direction: row;
-        column-gap: 150px;
+        column-gap: 120px;
     }
     .providers img{
         width: 180px;
