@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #1e1e1e;
+}
+
+main{
+    width: 550px;
+    height: 450px;
+}
+
+.accordion-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #d1d1d1;
+    width: 100%;
+    padding: 20px 10%;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px;
+}
+
+.accordion-section header{
+    font-size: 1.5rem;
+    padding: 20px 0;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.accordion-section .question-container{
+    width: 100%;
+    overflow: hidden;
+}
+.accordion-section .question-container .question{
+    position: relative;
+    font-size: 1.3rem;
+    padding: 15px 0;
+    border-bottom: black 2px solid;
+    cursor: pointer;
+    transition: font-size .5s;
+}
+
+.accordion-section .question-container .question::after{
+    content: '+';
+    position: absolute;
+    right: 0;
+}
+
+.accordion-section .question-container .answer{
+    margin: 15px 0;
+    font-size: 1.2rem;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .5s;
+}
+
+.accordion-section .question-container.active .answer{
+    max-height: 300px;
+}
+
+.accordion-section .question-container.active .question::after{
+    content: '-';
+    font-size: 1.3rem;
+}
+
+.accordion-section .question-container.active .question{
+    font-size: 1rem;
+}
