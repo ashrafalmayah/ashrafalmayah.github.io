@@ -64,23 +64,19 @@ header h1 {
 .work-card h3 {
     position: relative;
     width: 100%;
-    height: fit-content;
-    bottom: -100%;
-    transform: translate(0, -98%);
+    height: 60px;
     padding: 15px 50px;
     color: white;
     text-align: center;
     background-color: #1a1a1a;
     z-index: 2;
+    align-self: flex-end;
 }
-
 .work-card img {
-    position: absolute;
-    min-width: 100%;
-    max-width: 120%;
-    min-height: 100%;
-    left: -10%;
-    transition: scale 0.2s,transform 0.2s;
+    display: block;
+    width: 100%;
+    align-self: center;
+    transition: scale 0.3s;
 }
 
 .work-card .overlay {
@@ -101,13 +97,23 @@ header h1 {
 
 .work-card:hover img {
     scale: 1.1;
-    transform: translate(0, 4%);
+    /* transform: translate(0, 4%); */
     /* transform: translate(0, -69%); */
     /* bottom: 0; */
 }
 
 .work-card a {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
     text-decoration: none;
+}
+
+.img-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100% - 60px);
+    overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
