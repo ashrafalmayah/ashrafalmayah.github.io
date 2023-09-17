@@ -86,6 +86,11 @@ button{
     font-size: 1.4rem;
 }
 
+.task span.done{
+    text-decoration: line-through;
+    color: #8f8f8f;
+}
+
 .task button{
     cursor: pointer;
     padding: 10px 15px;
@@ -99,9 +104,14 @@ button{
     background-color: #f2c42b;
 }
 
-#check-task-btn:hover{
+#check-task-btn:hover,
+#check-task-btn.clicked{
     background-color: #ffffff;
     color: #f2c42b;
+}
+
+#check-task-btn.clicked:hover{
+    color: #ede1b6;
 }
 
 #delete-task-btn{

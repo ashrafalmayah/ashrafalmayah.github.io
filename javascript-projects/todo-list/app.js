@@ -37,7 +37,8 @@ addTaskBtn.addEventListener('click' , function (){
     tasksContainer.appendChild(task);
 
     checkTaskBtn.addEventListener('click' , () => {
-        checkTaskBtn.parentElement.style.textDecoration = 'line-through';
+        checkTaskBtn.parentElement.querySelector('span').classList.toggle('done');
+        checkTaskBtn.classList.toggle('clicked');
     });
 
     deleteTaskBtn.addEventListener('click' , () => {
