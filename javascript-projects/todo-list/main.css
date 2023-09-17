@@ -36,7 +36,7 @@ button{
     align-items: center;
 }
 
-.add-task-container .task-input{
+.add-task-container #task-input{
     background-color: #efefef;
     border: 0;
     padding: 10px 20px;
@@ -45,7 +45,7 @@ button{
     flex: 10;
 }
 
-.add-task-container .task-input:focus{
+.add-task-container #task-input:focus{
     outline: none;
 }
 
@@ -68,7 +68,7 @@ button{
 
 .tasks-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 10px;
 }
 

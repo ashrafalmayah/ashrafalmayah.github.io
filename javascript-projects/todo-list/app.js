@@ -1,10 +1,16 @@
 
 
-let taskInput = document.querySelector(".task-input");
+let taskInput = document.getElementById("task-input");
 
 let addTaskBtn = document.getElementById("add-task-btn");
 
 let tasksContainer = document.querySelector(".tasks-container");
+
+taskInput.addEventListener('keydown' , (e) => {
+    if(e.key == "Enter"){
+        addTaskBtn.click();
+    }
+});
 
 addTaskBtn.addEventListener('click' , function (){
     if(taskInput.value == "")return;
