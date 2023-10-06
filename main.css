@@ -76,9 +76,9 @@ header h1 {
     align-self: flex-end;
 }
 .work-card img {
-    display: block;
+    min-height: 100%;
     width: 100%;
-    align-self: center;
+    object-fit: cover;
     transition: scale 0.3s;
 }
 
